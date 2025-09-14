@@ -1,0 +1,31 @@
+{
+  "name": "ai-backend",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Minimal AI backend using Hugging Face API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanyimm/AI-BACKEND.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ethanyimm/AI-BACKEND/issues"
+  },
+  "homepage": "https://github.com/ethanyimm/AI-BACKEND#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "helmet": "^8.1.0",
+    "morgan": "^1.10.1",
+    "node-fetch": "^3.3.2"
+  }
+}

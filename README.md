@@ -1,8 +1,8 @@
-🤖 Hugging Face AI Backend
+##🤖 Hugging Face AI Backend
 A modular Node.js + Express backend that integrates with the Hugging Face Inference API to perform a variety of NLP tasks — all accessible via clean REST endpoints.
 Built as part of my weekly computer science learning journey, this project focuses on API integration, backend architecture, and multi‑model NLP workflows.
 
-🎯 Learning Goals
+#🎯 Learning Goals
 This week’s focus:
 - REST API Design — Structuring multiple AI endpoints in Express
 - Third‑Party API Integration — Authenticating and calling Hugging Face models
@@ -10,7 +10,7 @@ This week’s focus:
 - Error Handling — Gracefully handling cold starts, rate limits, and invalid tokens
 - Modular Code Structure — Separating routes, services, and utilities for maintainability
 
-🚀 Features
+#🚀 Features
 - Summarization — Condense long text into concise summaries
 - Sentiment Analysis — Detect positive/negative/neutral tone
 - Zero‑Shot Classification — Classify text into arbitrary labels without retraining
@@ -20,60 +20,21 @@ This week’s focus:
 - Text Generation — Generate text from prompts
 - Paraphrasing — Rewrite sentences while preserving meaning
 
-📦 Tech Stack
+#📦 Tech Stack
 - Node.js — Backend runtime
 - Express — Routing and middleware
 - node-fetch — HTTP requests to Hugging Face API
 - dotenv — Environment variable management
 - Hugging Face Inference API — NLP model hosting
 
-🛠️ Setup & Usage
-1. Clone the repo
-git clone https://github.com/ethanyimm/AI-BACKEND.git
-cd AI-BACKEND
-
-
-2. Install dependencies
-npm install
-
-
-3. Configure environment variables
-Create a .env file in the root directory:
-HF_API_TOKEN=your_huggingface_read_token
-PORT=3000
-
-
-⚠️ Never commit .env — it’s in .gitignore to protect secrets.
-
-4. Start the server
-npm start
-
-
-Server will run at:
-http://127.0.0.1:3000
-
-📡 Example Requests
-Summarization
-Invoke-RestMethod -Uri "http://127.0.0.1:3000/summarize" `
-  -Method POST -Headers @{ "Content-Type" = "application/json" } `
-  -Body '{"text":"Artificial intelligence is transforming industries worldwide..."}'
-
-
-Sentiment Analysis
-Invoke-RestMethod -Uri "http://127.0.0.1:3000/sentiment" `
-  -Method POST -Headers @{ "Content-Type" = "application/json" } `
-  -Body '{"text":"I absolutely love this product!"}'
-
-
-
-🏗️ How It Works
+#🏗️ How It Works
 - Routes — Each NLP task has its own Express route
 - Service Layer — huggingface.js handles API calls to specific models
 - Environment Variables — .env defines token and model names
 - Error Handling — Centralized middleware catches and formats errors
 - Extensibility — Add new models/endpoints by creating a service function and route
 
-📚 Part of My Learning Journey
+#📚 Part of My Learning Journey
 This project is part of my weekly exploration of computer science concepts.
 Each week, I pick a new topic or technology to dive into through hands‑on projects.
 This week: Hugging Face API integration and multi‑model NLP backend design.
@@ -84,18 +45,18 @@ Previous weeks have included:
 - Rust’s async ecosystem and network programming
 The goal is to continuously expand my CS knowledge through practical implementation.
 
-🎓 What I Learned
+#🎓 What I Learned
 - How to authenticate and interact with Hugging Face’s Inference API
 - Handling model cold starts and rate limits in production code
 - Designing modular, extensible backend services
 - Mapping different NLP tasks to their respective models
 - Debugging and logging API responses for faster iteration
 
-⚠️ Educational Purpose
+#⚠️ Educational Purpose
 This backend is designed for educational purposes and learning about NLP integration.
 Always ensure you comply with API usage limits and model license terms.
 
-🤝 Contributing
+#🤝 Contributing
 Found a bug or have a suggestion?
 Open an issue or submit a pull request — feedback is always welcome!
 
